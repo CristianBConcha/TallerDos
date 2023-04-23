@@ -1,0 +1,26 @@
+@startuml
+left to right direction
+skin rose
+
+' TODO: Add the class model
+
+Entity Socio {
+NUMERO_LIBROS_MAXIMO
+nombre
+apellido
+correoElectronico
+numeroDeSocio
+contrasenia
+librosEnPrestamo
+}
+Entity Libro{
+isbn
+titulo
+autor
+categoria
+calificacion
+numeroCalificaciones
+}
+Socio "1"-> "0...5"Libro :Pide
+
+@enduml
